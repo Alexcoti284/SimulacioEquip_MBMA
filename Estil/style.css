@@ -36,5 +36,8 @@ button{
     font-size: 40px;
     color: black;
     font-weight: bold;
-
 }
+
+button:hover{
+    cursor: pointer;
+    }
