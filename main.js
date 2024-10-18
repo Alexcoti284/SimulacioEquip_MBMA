@@ -40,5 +40,12 @@ function destapar(id) {
     tarjetasDestapadas++;
     
 
+     // Mostrar imagen cuando se destapa la carta
+     function mostrarImagen(id, resultado) {
+        var boton = document.getElementById(id);
+        boton.innerHTML = "<img src='./img/" + resultado + ".png' alt='Carta'>";
+        boton.disabled = true;
+    }
+
     
 }
