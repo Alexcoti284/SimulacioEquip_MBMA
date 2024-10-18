@@ -83,5 +83,18 @@ function destapar(id) {
             }, 200);
         }
     }
+
+    // Función para mostrar la alerta
+function mostrarAlerta() {
+    // Construir el mensaje de la alerta con los resultados
+    var mensajeAlerta = "¡Felicidades! Has completado el juego.\n\n";
+    mensajeAlerta += "Aciertos: " + acierto + "\n";
+    mensajeAlerta += "Movimientos: " + movimientos + "\n";
+    mensajeAlerta += "Tiempo: " + timer + " segundos\n\n";
+    mensajeAlerta += "¡Gracias por jugar!";
+    
+    // Mostrar la alerta
+    alert(mensajeAlerta);
+}
     
 }
