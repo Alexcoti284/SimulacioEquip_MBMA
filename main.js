@@ -47,5 +47,41 @@ function destapar(id) {
         boton.disabled = true;
     }
 
+    if (tarjetasDestapadas === 1) {
+        // Mostrar la primera imagen
+        tarjeta1 = document.getElementById(id);
+        primerResultado = numeros[id];
+        mostrarImagen(id, primerResultado);
+    } else if (tarjetasDestapadas === 2) {
+        // Mostrar la segunda imagen
+        tarjeta2 = document.getElementById(id);
+        segundoResultado = numeros[id];
+        mostrarImagen(id, segundoResultado);
+
+        // Incrementar movimientos
+        movimientos++;
+        mostrarMovimientos.innerHTML = 'Movimientos: ' + movimientos;
+
+        // Verificar si las tarjetas coinciden
+        if (primerResultado === segundoResultado) {
+            // Resetear tarjetas destapadas
+            tarjetasDestapadas = 0;
+            acierto++;
+            mostrarAciertos.innerHTML = 'Aciertos: ' + acierto;
+            if (acierto === 8) {
+                clearInterval(tiempo);
+                mostrarAlerta();
+            }
+        } else {
+            // Mostrar momentáneamente valores y volver a tapar
+            setTimeout(() => {
+                tarjeta1.innerHTML = "<img src='./img/dragon-ball-icon-27.png' alt='Carta'>";
+                tarjeta2.innerHTML = "<img src='./img/dragon-ball-icon-27.png' alt='Carta'>";
+                tarjeta1.disabled = false;
+                tarjeta2.disabled = false;
+                tarjetasDestapadas = 0;
+            }, 200);
+        }
+    }
     
 }
