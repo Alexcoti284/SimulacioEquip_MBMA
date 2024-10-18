@@ -50,3 +50,18 @@ button:hover{
         height: 450px;
         padding: 0 20px;
 }
+
+.estadisticas{
+    border: 0.5px solid white;
+    height: 130px;
+    border-radius:8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+footer{
+    text-align: center;
+}
+
+img{
+    width: 80%;
+}
