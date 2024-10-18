@@ -16,3 +16,14 @@ numeros = numeros.sort(() => {
     return Math.random() - 0.5;
 });
 console.log(numeros);
+
+function destapar(id) {
+    // Apuntando a elementos HTML
+    let mostrarMovimientos = document.getElementById('movimientos');
+    let mostrarAciertos = document.getElementById('aciertos');
+    let mostrarTiempo = document.getElementById('t-restante');
+
+    
+
+    
+}
