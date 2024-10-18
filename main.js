@@ -23,6 +23,21 @@ function destapar(id) {
     let mostrarAciertos = document.getElementById('aciertos');
     let mostrarTiempo = document.getElementById('t-restante');
 
+
+     // Contador de tiempo
+     if (!temporizador) {
+        contarTiempo();
+        temporizador = true;
+    }
+
+    function contarTiempo() {
+        tiempo = setInterval(() => {
+            timer++;
+            mostrarTiempo.innerHTML = 'Tiempo: ' + timer;
+        }, 1000);
+    }
+
+    tarjetasDestapadas++;
     
 
     
