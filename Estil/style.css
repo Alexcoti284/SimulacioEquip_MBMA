@@ -4,3 +4,9 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background: rgb(107,63,251);
+    background: radial-gradient(circle, rgba(107,63,251,1) 12%, rgb(255, 153, 20) 100%);
+    color: white;
+}
