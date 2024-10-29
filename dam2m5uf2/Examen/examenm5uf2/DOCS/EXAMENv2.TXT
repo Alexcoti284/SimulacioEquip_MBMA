@@ -1,0 +1,5 @@
+git clone https://github.com/marcelosans/examenm5uf2.git
+git push origin main
+git push origin main
+git commit -m "segon commit examen"
+git add ./

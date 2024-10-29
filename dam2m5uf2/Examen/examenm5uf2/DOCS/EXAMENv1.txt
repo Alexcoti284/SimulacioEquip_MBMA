@@ -1,0 +1,5 @@
+git init 
+git add ./
+git commit -m "primer commit examen v1"  
+git remote add origin https://github.com/marcelosans/examenm5uf2.git
+git push -u origin main
